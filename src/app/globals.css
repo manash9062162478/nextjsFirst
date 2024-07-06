@@ -1,0 +1,86 @@
+/* src/styles/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.navbar-bg{
+  background-color: #222;
+}
+.navbar-text{
+  color: #9d9d9d;
+}
+.plan-bg{
+  background: rgb(255 226 164);
+}
+.plan-bg p{
+  position: relative;
+} 
+.hero-section-bg{
+  background: rgb(20 178 140 );
+}
+.searchButton>span {
+  /* Initial translate should be 0 */
+  transform: translate(0);
+  /* Smooth transition for transform property */
+  transition: all 0.2s ease-in-out;
+}
+
+.searchButton:hover > span {
+  /* Translate span element by 20px on hover */
+  transform: translateX(7px);
+}
+.introVideo{
+  height:450px;
+}
+@media only screen and (max-width: 600px) {
+  .introVideo{
+    height:auto;
+    padding: 20px 0;
+  }
+}
+.introVideo button{
+  background: transparent;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.introVideo button:hover{
+  background: #fff;
+  color: #000;
+}
+.introVideo button:hover > span{
+  transform: translateX(7px)
+}
+.categorySearch {
+  overflow: auto;
+  
+}
+
+.categorySearch::-webkit-scrollbar {
+  width: 2px;
+}
+
+.categorySearch::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.categorySearch::-webkit-scrollbar-thumb {
+  background-color: #4ADE80;
+ 
+  border-radius: 5px;
+  border: 3px solid #f1f1f1;
+}
+
+.categorySearch {
+  scrollbar-width: thin;
+ 
+  scrollbar-color: #4ADE80 #f1f1f1;
+}
+
+.categorySearch {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
